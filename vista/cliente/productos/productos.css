@@ -1,0 +1,87 @@
+
+body {
+    background-color: hsl(120, 9%, 94%);
+}
+.navbar-brand img {
+    height: 50px;
+}
+.navbar-nav .nav-link:hover {
+    color: #00b90c; /* Resaltado dorado */
+}
+.product-card {
+    transition: transform 0.3s;
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+.btn-custom {
+    background-color: #40f540;
+    color: #080807;
+    font-size: 24px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.btn-custom:hover {
+    background-color: #35c435;
+    color: white;
+}
+.social-icons img {
+    width: 80px;
+    margin: 10px;
+}
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+.inicio {
+    /* background-image: url('img/noche.webp'); */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* Ancho total del elemento */
+    height: 250px; /* Alto específico */
+}
+/* h1{
+color: white;
+} */
+.display-4.lead{
+color: white;
+}
+
+    /* Asegura que las tarjetas tengan la misma altura */
+    .product-card {
+        height: 100%; /* Permite que todas las tarjetas ocupen el mismo espacio */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+        transform: scale(1.05);
+    }
+
+    /* Asegura que las imágenes tengan un tamaño consistente */
+    .product-card img {
+        object-fit: cover; /* Ajusta la imagen para que siempre ocupe el espacio sin deformarse */
+        height: 200px; /* Define una altura fija */
+        width: 100%; /* Ocupa el ancho completo de la tarjeta */
+    }
+
+    /* Evita que las tarjetas se deformen por contenido adicional */
+    .product-card .card-body {
+        flex-grow: 1; /* Permite que el contenido se ajuste correctamente */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #head-carrito{
+      background-color: #00b90c;
+    }
+    #detalles-boton{
+        background-color: #28fa36;
+    }
+
+
+
+

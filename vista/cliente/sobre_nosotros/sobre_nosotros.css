@@ -1,0 +1,77 @@
+
+body {
+    background-color: hsl(120, 9%, 94%);
+}
+.navbar-brand img {
+    height: 50px;
+}
+.navbar-nav .nav-link:hover {
+    color: #00b90c; /* Resaltado dorado */
+}
+.btn-custom {
+    background-color: #40f540;
+    color: #080807;
+    font-size: 24px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.btn-custom:hover {
+    background-color: #35c435;
+    color: white;
+}
+.social-icons img {
+    width: 80px;
+    margin: 10px;
+}
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+.logo {
+    background-image: url('img/logo-removebg-preview.png');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 250px; /* Ancho del contenedor */
+    height: 250px; /* Alto del contenedor, igual al ancho */
+    border-radius: 50%; /* Hace que el contenedor sea redondo */
+    overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
+    margin: auto; /* Centra el elemento horizontalmente */
+}
+
+
+/*flecha subida */
+         /* Estilo para la flecha tipo burbuja */
+         .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            font-size: 24px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efecto cuando se pasa el ratón sobre el botón */
+        .back-to-top:hover {
+            background-color: #218838;
+        }
+
+        /* Estilo para la flecha */
+        .back-to-top::before {
+            content: '↑';
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+

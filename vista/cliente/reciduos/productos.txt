@@ -1,0 +1,99 @@
+<!--primer producto-->  
+                <div class="col">
+                      <div class="card product-card" data-name="p-1">
+                          <img src="img/producto1.jpg" class="card-img-top" alt="Strawberries">
+                          <div class="card-body">
+                              <h5 class="card-title">Strawberries</h5>
+                              <p class="card-text">$2.00</p>
+                              <button class="btn btn-primary w-100">Add to Cart</button>
+                          </div>
+                      </div>
+                  </div>
+                   <!--segundo producto-->
+                  <div class="col">
+                      <div class="card product-card" data-name="p-2">
+                          <img src="img/producto2.jpg" class="card-img-top" alt="Onions">
+                          <div class="card-body">
+                              <h5 class="card-title">Onions</h5>
+                              <p class="card-text">$2.00</p>
+                              <button class="btn btn-primary w-100">Add to Cart</button>
+                          </div>
+                      </div>
+                  </div>
+                  <!--tercer producto-->
+                  <div class="col">
+                    <div class="card product-card" data-name="p-3">
+                        <img src="img/producto3.webp" class="card-img-top" alt="Onions">
+                        <div class="card-body">
+                            <h5 class="card-title">banano</h5>
+                            <p class="card-text">$2.00</p>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!--cuarto producto-->
+                <div class="col">
+                    <div class="card product-card" data-name="p-3">
+                        <img src="img/producto4.webp" class="card-img-top" alt="Onions">
+                        <div class="card-body">
+                            <h5 class="card-title">banano</h5>
+                            <p class="card-text">$2.00</p>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                 <!--quinto producto-->
+                <div class="col">
+                    <div class="card product-card" data-name="p-3">
+                        <img src="images/2.png" class="card-img-top" alt="Onions">
+                        <div class="card-body">
+                            <h5 class="card-title">banano</h5>
+                            <p class="card-text">$2.00</p>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!--sexto producto-->
+                <div class="col">
+                    <div class="card product-card" data-name="p-3">
+                        <img src="images/2.png" class="card-img-top" alt="Onions">
+                        <div class="card-body">
+                            <h5 class="card-title">banano</h5>
+                            <p class="card-text">$2.00</p>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!--siete producto-->
+                <div class="col">
+                    <div class="card product-card" data-name="p-3">
+                        <img src="images/2.png" class="card-img-top" alt="Onions">
+                        <div class="card-body">
+                            <h5 class="card-title">banano</h5>
+                            <p class="card-text">$2.00</p>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!--octavo producta-->
+                <div class="col">
+                    <div class="card product-card" data-name="p-3">
+                        <img src="images/2.png" class="card-img-top" alt="Onions">
+                        <div class="card-body">
+                            <h5 class="card-title">banano</h5>
+                            <p class="card-text">$2.00</p>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!--noveno producto-->
+                <div class="col">
+                    <div class="card product-card" data-name="p-3">
+                        <img src="images/2.png" class="card-img-top" alt="Onions">
+                        <div class="card-body">
+                            <h5 class="card-title">banano</h5>
+                            <p class="card-text">$2.00</p>
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
