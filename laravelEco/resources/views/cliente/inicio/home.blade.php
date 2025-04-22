@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco-friendly</title>
+    <!--libreria-iconos-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="{{asset('img/logo-removebg-preview.png')}}" alt="Logo" style="width: 150px; height: 80px;">
+        </a>
+        
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{asset('home')}}">Inicio</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="../sobre_nosotros/sobre_nosotros.html">Sobre Nosotros</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contactanos</a> <!-- Enlace al footer -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{asset('productos')}}">Productos</a>
+                </li>
+                <li>
+                <!-- <button id="theme-toggle" class="btn btn-outline-secondary ms-3">
+    <i id="theme-icon" class="bi"></i>
+</button> -->
+
+               </li>    
+                <li>
+                    <a href="{{asset('iniciar')}}" class="btn btn-custom btn-lg mt-3">INICIAR SESIÓN</a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+ <!-- Botón para volver al inicio -->
+ <button class="back-to-top" onclick="scrollToTop()"></button>
+<div class="inicio bg-success text-white py-5 mb-4">
+    <div class="container text-center">
+        <h1 class="display-4">¡Somos una empresa de productos ecológicos!</h1>
+        <p class="lead"></p>
+    </div>
+  </div>
+
+<!-- Sobre Nosotros -->
+<div class="container my-5">
+    <h2 class="text-center">ECO_FRIENDLY</h2>
+    <p>
+        Somos una pequeña empresa centrada en el cuidado del planeta. El problema ambiental radica en el consumismo excesivo e innecesario, que conlleva a la sobreproducción, el uso desmedido de recursos naturales, la generación de desechos y la contaminación del medio ambiente.
+    </p>
+    <p>
+        El objetivo de este proyecto es promover y vender productos amigables con el medio ambiente, concientizando a las personas sobre la importancia de proteger el medio ambiente.
+    </p>
+</div>
+<!--targetas-->
+<div class="container my-5">
+    <h3 class="text-center mb-4">Nuestros Productos Destacados</h3>
+    <div class="row">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/producto1.jpg" class="card-img-top" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Botella Reutilizable</h5>
+                    <p class="card-text">Perfecta para reducir el uso de plástico. Fabricada con materiales 100% reciclables.</p>
+                    <a href="productos.html" class="btn btn-success">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/producto2.jpg" class="card-img-top" alt="Producto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Bolsas Biodegradables</h5>
+                    <p class="card-text">Ideales para tus compras, se descomponen fácilmente en el medio ambiente.</p>
+                    <a href="productos.html" class="btn btn-success">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/depositphotos_82110258-stock-photo-recycled-chair-made-from-plastic.jpg" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Cepillo de Bambú</h5>
+                    <p class="card-text">Cuida tus dientes y el planeta con este cepillo ecológico y resistente.</p>
+                    <a href="productos.html" class="btn btn-success">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Carrusel de Ofertas -->
+<div id="carouselOfertas" class="carousel slide my-5" data-bs-ride="carousel">
+    <h2 class="text-center mb-4">Descuentos Fechas Importantes</h2>
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <!-- Contenido del carrusel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/Leonardo_Phoenix_A_vibrant_and_colorful_illustration_of_a_fest_0.jpg" class="d-block w-100" alt="Oferta 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-dark">50% de descuento en Botellas Reutilizables</h5>
+                <p class="text-dark">Aprovecha esta oferta limitada y contribuye al cuidado del planeta.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/Leonardo_Phoenix_A_whimsical_illustration_showcasing_the_conce_3.jpg" class="d-block w-100" alt="Oferta 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-dark">30% en Bolsas Biodegradables</h5>
+                <p class="text-dark">Haz tus compras de forma sostenible y económica.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/Leonardo_Phoenix_A_vibrant_and_colorful_illustration_of_a_Moth_3.jpg" class="d-block w-100" alt="Oferta 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-dark">Descuento Especial en Cepillos de Bambú</h5>
+                <p class="text-dark">Cambia tu cepillo por uno ecológico y amigable con el medio ambiente.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Controles de navegación -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfertas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselOfertas" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+    
+
+
+
+<!--footer-->
+<footer id="footer" class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Contactanos</h1>
+            <!-- Columna 1: Información de la empresa -->
+            <div class="col-md-4">
+                <h5>Sobre Nosotros</h5>
+                <p>Somos una empresa comprometida con productos ecológicos que ayudan a cuidar el medio ambiente.</p>
+            </div>
+            <!-- Columna 2: Enlaces rápidos -->
+            <div class="col-md-4">
+                <h5>Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                    <li><a href="productos.html" class="text-white text-decoration-none">Productos</a></li>
+                    <li><a href="sobre_nosotros.html" class="text-white text-decoration-none">Sobre Nosotros</a></li>
+                    <li><a href="#footer" class="text-white text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Columna 3: Redes sociales -->
+            <div class="col-md-4">
+                <h5>Síguenos</h5>
+                <div class="d-flex">
+                    <a href="https://www.facebook.com/" class="text-white me-3">
+                        <i class="bi bi-facebook" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="text-white me-3">
+                        <i class="bi bi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://x.com/?lang=en" class="text-white me-3">
+                        <i class="bi bi-twitter" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Línea separadora -->
+        <hr class="bg-white">
+        <!-- Derechos reservados -->
+        <div class="text-center">
+            <p class="mb-0">© 2024 Eco-Friendly. Todos los derechos reservados.</p>
+        </div>
+    </div>
+  </footer>
+<script src="js/volverInicio.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
