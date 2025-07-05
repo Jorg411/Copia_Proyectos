@@ -9,7 +9,7 @@ class LoginController extends Controller
 {
     public function showLoginForm()
     {
-        return view('general.iniciarSesion.iniciar'); // Tu vista personalizada
+        return view('general.iniciarSesion.iniciar');
     }
 
     public function login(Request $request)
@@ -18,6 +18,7 @@ class LoginController extends Controller
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
+
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
         
@@ -29,16 +30,25 @@ class LoginController extends Controller
                 return redirect()->route('home');
             }
         
+            // Si el rol no es válido
             Auth::logout();
             return redirect()->route('login')->withErrors([
                 'rol' => 'Rol no autorizado.',
             ]);
-            // dd('Login exitoso', Auth::user());
-
         }
+
+        return back()->withErrors([
+            'email' => 'Las credenciales proporcionadas no coinciden con nuestros registros.',
+        ])->onlyInput('email');
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        
+        return redirect()->route('home')->with('success', 'Has cerrado sesión exitosamente.');
     }
 }
-        
-
-      
-
